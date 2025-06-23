@@ -5,6 +5,11 @@
   padding: 0px;
 }
 
+*:focus {
+  outline: 2px solid #ff7500;
+  outline-offset: 5px;
+}
+
 ul {
   list-style: none;
 }
@@ -36,12 +41,21 @@ body {
   border-radius: 4px;
   color: white;
   text-decoration: none;
+  margin: 32px;
+}
+
+.orange-button:hover {
+  opacity: 80%;
 }
 
 /* Header */
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+
+.header-logo {
+  display: flex;
 }
 
 .navbar-wrapper {
@@ -64,6 +78,10 @@ body {
 .header-link {
   text-decoration: none;
   color: black;
+}
+
+.header-link:hover {
+  color: #ff7500;
 }
 
 /* Hero */
@@ -100,8 +118,8 @@ body {
 /* Why */
 
 .why {
-  padding-top: 236;
-  padding-bottom: 330;
+  padding-top: 236px;
+  padding-bottom: 330px;
 }
 
 .title {
@@ -162,7 +180,7 @@ body {
 }
 
 .cta-title {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 40px;
   line-height: 120%;
   letter-spacing: 0.5px;
@@ -197,6 +215,10 @@ body {
   gap: 16px;
 }
 
+.social-link {
+  display: flex;
+}
+
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -211,4 +233,8 @@ body {
 
 .footer-link {
   color: #252420;
+}
+
+.footer-link:hover {
+  color: #ff7500;
 }

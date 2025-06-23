@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akademnashr</title>
     <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="container header-container">
-        <a href="index.html">
+        <a class="header-logo" href="index.html" data-aos="fade-right" data-aos-duration="1000">
           <img
             src="./logo.svg"
             alt="Akademnashr logo"
@@ -23,21 +27,28 @@
         <div class="navbar-wrapper">
           <nav>
             <ul class="header-links">
-              <li>
+              <li data-aos="fade-up" data-aos-delay="100">
                 <a class="header-link" href="#">Bosh sahifa</a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="200">
                 <a class="header-link" href="#">Kitoblar</a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="300">
                 <a class="header-link" href="#">Aksiyalar</a>
               </li>
-              <li>
+              <li data-aos="fade-up" data-aos-delay="400">
                 <a class="header-link" href="#">Kontaktlar</a>
               </li>
             </ul>
           </nav>
-          <a class="orange-button" href="#">Ro'yxatdan o'tish</a>
+          <a
+            class="orange-button"
+            href="#"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            Ro'yxatdan o'tish
+          </a>
         </div>
       </div>
     </header>
@@ -47,7 +58,7 @@
       <section class="hero">
         <div class="container hero-container">
           <!-- content -->
-          <div class="hero-content">
+          <div class="hero-content" data-aos="fade-right">
             <h2 class="hero-title">Pythonda dasturlash asoslari</h2>
             <p class="hero-text">
               Dasturlash asoslariga oid o‘zbek tilidagi ilk eng mukammal
@@ -58,6 +69,7 @@
             <a class="orange-button" href="#">Buyurtma berish</a>
           </div>
           <img
+            data-aos="fade-left"
             src="./python-book.jpg"
             alt="Python book"
             width="510"
@@ -68,12 +80,12 @@
       <!-- Why -->
       <section class="why">
         <div class="container">
-          <h1 class="title">
+          <h1 class="title" data-aos="zoom-in">
             Nega aynan <br />
             Akademnashr?
           </h1>
           <ul class="cards">
-            <li class="card">
+            <li class="card" data-aos="fade-up" data-aos-delay="200">
               <span class="circle">
                 <img
                   src="./images/cursor.svg"
@@ -88,7 +100,7 @@
                 buyurtma qila olasiz.
               </p>
             </li>
-            <li class="card">
+            <li class="card" data-aos="fade-up" data-aos-delay="400">
               <span class="circle">
                 <img
                   src="./images/stars.svg"
@@ -103,7 +115,7 @@
                 xil janrdagi kitoblarni topa olasiz.
               </p>
             </li>
-            <li class="card">
+            <li class="card" data-aos="fade-up" data-aos-delay="600">
               <span class="circle">
                 <img
                   src="./images/thunder.svg"
@@ -125,7 +137,7 @@
       <section class="cta">
         <div class="container cta-container">
           <!-- content -->
-          <div class="cta-content">
+          <div class="cta-content" data-aos="flip-up">
             <h2 class="cta-title">Bolalar kitoblari uchun ajoyib aksiya!</h2>
             <p>
               Ertaklar, she’rlar, sarguzasht asarlar, fikrlashni o’stirish uchun
@@ -141,6 +153,7 @@
           </div>
           <div>
             <img
+              data-aos="flip-down"
               src="./images/sale-img.jpg"
               alt="Books"
               width="440"
@@ -155,7 +168,7 @@
       <div class="container">
         <!-- top -->
         <div class="footer-top">
-          <a href="index.html">
+          <a href="index.html" data-aos="fade-down">
             <img
               src="./logo.svg"
               alt="Akademnashr logo"
@@ -165,8 +178,8 @@
           </a>
 
           <ul class="socials">
-            <li>
-              <a href="#" target="_blank">
+            <li data-aos="flip-down" data-aos-delay="100">
+              <a class="social-link" href="#" target="_blank">
                 <img
                   src="./images/telegram.svg"
                   alt="Telegram"
@@ -175,8 +188,8 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="#" target="_blank">
+            <li data-aos="flip-down" data-aos-delay="200">
+              <a class="social-link" href="#" target="_blank">
                 <img
                   src="./images/facebook.svg"
                   alt="Facebook"
@@ -185,8 +198,8 @@
                 />
               </a>
             </li>
-            <li>
-              <a href="#" target="_blank">
+            <li data-aos="flip-down" data-aos-delay="300">
+              <a class="social-link" href="#" target="_blank">
                 <img
                   src="./images/instagram.svg"
                   alt="Instagram"
@@ -201,72 +214,76 @@
         <!-- bottom -->
         <div class="footer-bottom">
           <ul class="footer-links-wrapper">
-            <li>
+            <li data-aos="flip-down" data-aos-delay="50">
               <a class="footer-link" href="#">Bosh sahifa</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="100">
               <a class="footer-link" href="#">Kitoblar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="150">
               <a class="footer-link" href="#">Aksiyalar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="200">
               <a class="footer-link" href="#">Yangiliklar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="250">
               <a class="footer-link" href="#">Kontaktlar</a>
             </li>
           </ul>
 
           <ul class="footer-links-wrapper">
-            <li>
+            <li data-aos="flip-down" data-aos-delay="300">
               <a class="footer-link" href="#">Ilmiy nashrlar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="350">
               <a class="footer-link" href="#">Ilmiy-ommabop nashrlar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="400">
               <a class="footer-link" href="#">Ma’rifiy nashrlar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="450">
               <a class="footer-link" href="#">Lug’atlar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="500">
               <a class="footer-link" href="#">Adabiy-badiiy nashrlar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="550">
               <a class="footer-link" href="#">Abituriyentlar uchun</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="600">
               <a class="footer-link" href="#">Bolalar uchun</a>
             </li>
           </ul>
 
           <ul class="footer-links-wrapper">
-            <li>
+            <li data-aos="flip-down" data-aos-delay="650">
               <a class="footer-link" href="#">Ko’p so’raladigan savollar</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="700">
               <a class="footer-link" href="#">Yetkazib berish haqida</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="750">
               <a class="footer-link" href="#">To’lov usullari haqida</a>
-            </li>
+            </li data-aos="flip-down" data-aos-delay="800">
           </ul>
 
           <ul class="footer-links-wrapper">
-            <li>
+            <li data-aos="flip-down" data-aos-delay="900">
               <a class="footer-link" href="#">Bo’sh ish o’rinlari</a>
             </li>
-            <li>
+            <li data-aos="flip-down" data-aos-delay="950">
               <a class="footer-link" href="#">Biz bilan bog’lanish</a>
             </li>
-            <li>
-              <a class="footer-link" href="#">Maxfiylik nizomi#</a>
+            <li data-aos="flip-down" data-aos-delay="1000">
+              <a class="footer-link" href="#">Maxfiylik nizomi</a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
