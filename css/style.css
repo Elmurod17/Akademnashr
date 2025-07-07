@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
@@ -23,7 +24,6 @@ body {
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0.5px;
-
   padding-top: 80px;
 }
 
@@ -109,8 +109,6 @@ body {
   justify-content: space-between;
 }
 
-
-
 .hero-content {
   max-width: 387px;
   width: 100%;
@@ -129,7 +127,6 @@ body {
 }
 
 /* Why */
-
 .why {
   padding-top: 236px;
   padding-bottom: 330px;
@@ -174,6 +171,7 @@ body {
   font-family: "Roboto Condensed";
 }
 
+/* CTA */
 .cta {
   background-color: #252420;
   color: white;
@@ -250,4 +248,114 @@ body {
 
 .footer-link:hover {
   color: #ff7500;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Phones: max-width 600px */
+@media screen and (max-width: 600px) {
+  .hero-container,
+  .cta-container,
+  .footer-top,
+  .footer-bottom,
+  .cards,
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-title,
+  .cta-title,
+  .title {
+    font-size: 28px;
+  }
+
+  .title {
+    margin-bottom: 32px;
+  }
+
+  .hero-content,
+  .cta-content,
+  .card {
+    max-width: 100%;
+  }
+
+  .hero-text,
+  .cta-text {
+    margin: 16px;
+  }
+
+  .cards {
+    gap: 24px;
+  }
+
+  .header-links {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .orange-button {
+    margin: 16px auto;
+  }
+
+  .cta {
+    padding: 32px 16px;
+  }
+
+  .why {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-links-wrapper {
+    align-items: center;
+  }
+}
+
+/* Tablets: 601px - 992px */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .hero-container,
+  .cta-container,
+  .footer-top,
+  .footer-bottom,
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-title,
+  .cta-title,
+  .title {
+    font-size: 36px;
+  }
+
+  .hero-content,
+  .cta-content,
+  .card {
+    max-width: 90%;
+  }
+
+  .cards {
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .header-links {
+    gap: 24px;
+  }
+
+  .why {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .cta {
+    padding: 48px;
+  }
+
+  .footer-links-wrapper {
+    align-items: center;
+  }
 }
